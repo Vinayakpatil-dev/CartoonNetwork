@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'open sans';
+    transition: all 0.4s ease-in-out;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    background-color:black;
+    min-height:100%;
+    width: 100%;
+}
+header{
+    background-color: white;
+    width:100%;
+    height:150px;
+}
+header img{
+    margin-top:44px;
+    margin-left:30px;
+}
+nav{
+    display: flex;
+    width:470px;
+    /* background-color:aqua; */
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:9%;
+    left:15%;
+    font-weight:600;
+}
+.menu{
+    position: relative;
+    padding-bottom:8px;
+    cursor: pointer;;
+    /* border:2px solid black; */
+}
+.menu:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:50%;
+    width:0;
+    height:4px;
+    background-color:#02A6D6;
+    transition:all .4s;
+
+
+}
+.menu:hover:before{
+width:50%;
+}
+.menu:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right:50%;
+    width:0;
+    height:4px;
+    background-color:#02A6D6;
+    transition:all .4s;
+
+}
+.menu:hover:after{
+width:50%;
+}
+.one:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background-color:#02A6D6;
+}
+.one:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:4px;
+    background-color:#02A6D6;
+} 
+
+#wrapper{
+    width:95%;
+    height:930px;
+    background-color:black;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bigb{
+    height:350px;
+    width:33%;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.smallb{
+    height:280px;
+    width:24.5%;
+    /* background-color:red;  */
+    overflow: hidden; 
+}
+.fe{
+    font-size:33px;
+    font-weight:700;
+    color:white;
+    margin-left:32px;
+    padding-top:22px;
+}
+.two{
+    width:100%;
+    height:400px;
+    background-color:black;
+    color:white;
+}
+.two p{
+    padding:10px 30px;
+    font-weight:100;
+    letter-spacing:.5px;
+    line-height:31px;
+}
+.two a{
+    text-decoration: none;
+    transition:.5s;
+}
+.two a:hover{
+color:rgb(0, 132, 255);
+cursor:pointer;
+}
+.smallb img:nth-child(1){
+    position: relative;;
+    top:0px;
+    width:350px;
+}
+ img:nth-child(9){
+    position: relative;
+    top:0px;
+    width:200px;
+}
+.bigb::before{
+ content:'';
+ height:350px;
+ width:31.4%;
+ background-color:black;
+ position: absolute;
+ opacity:0;
+ z-index:3;
+ transition: all 0.4s ease-in-out;
+}
+.bigb::after{
+    content:'';
+    height:350px;
+    width:31.4%;
+    background:linear-gradient(rgba(225,225,225,.3),black,black);
+    opacity:.5;
+    position: absolute;
+    top:217px;
+}
+.bigb:hover::before{
+opacity:.4;
+}
+.bigb:hover img{
+    transform: scale(1.02);
+    transition: all 0.4s ease-in-out;
+}
+.smallb:hover img{
+    transform: scale(1.02);
+    transition: all 0.4s ease-in-out;
+}
+
+.smallb::before{
+    content:'';
+    height:280px;
+    width:23.3%;
+    background-color:black;
+    position: absolute;
+    opacity: 0;
+    z-index:1;
+    transition:all .5s;
+}
+.smallb:hover::before{
+    opacity:.5;
+    }
+    .smallb::after{
+        content:'';
+        height:280px;
+        width:23.3%;
+        background:linear-gradient(rgba(225,225,225,.2),black);
+        opacity:.5;
+        position: absolute;
+        transition:all .5s;
+        top:574px;
+    }
+    #exe2:after{
+        content:'';
+        height:280px;
+        width:23.3%;
+        background:linear-gradient(rgba(225,225,225,.2),black);
+        opacity:.5;
+        position: absolute;
+        transition:all .5s;
+        top:860px;
+    }
+    .bigb h2{
+        color:white;
+        display:block;
+        z-index:10;
+        font-size:18px;
+        font-weight:600;
+        text-align:left;
+        line-height: 27px;
+        position: absolute;
+        top:522px;
+        margin-left:8px;
+    }
+    .smallb h2{
+        color:white;
+        display:block;
+        z-index:10;
+        font-size:18px;
+        font-weight:600;
+        text-align:left;
+        line-height: 27px;
+        position: absolute;
+        top:810px;
+        margin-left:8px;
+    }
+    .smallb #exe{
+        color:white;
+        display:block;
+        z-index:10;
+        font-size:18px;
+        font-weight:600;
+        text-align:left;
+        line-height: 27px;
+        position: absolute;
+        top:1096px;
+        margin-left:8px;
+    }
+    #test{
+     height:170px;
+     width:100%;
+     text-align: center;
+     background-color:rgb(32, 32, 32);
+    }
+
+    #test #link{
+       width:60%;
+       /* background-color:yellow; */
+       margin:0 auto;
+       display:flex;
+       justify-content: space-between;
+       padding-top:60px;
+    }
+
+    #test #link a{
+        text-decoration:none;
+        color:white;
+        font-size:15px;
+    }
+#test #link a:hover{
+    color:rgb(0, 162, 255);
+    transition:.3s;
+}
+    small{
+        margin-top:30px;
+        display: block;
+        color:rgb(83, 83, 83);
+    }
+
+    .end{
+        height:230px;
+        width:100%;
+        background-color:black;
+        /* display:flex;
+        justify-content: center; */
+    }
+
+    .end #first{
+       position:relative;
+       top:10%;
+       left:50%;
+       transform:translate(-50%,30%);
+    }
+
+    h6{
+        color:rgb(167, 167, 167);
+        text-align: center;
+        font-size:15px;
+        font-weight:400;
+        margin-top:20px;
+    }
+    .end .con{
+        width:57%;
+       /* background-color:yellow; */
+       margin:0 auto;
+       display:flex;
+       justify-content: space-between;
+       padding-top:30px;
+    }
+    .bigb small {
+        margin-top: -85px;
+        margin-left:8px;
+        display: block;
+        color:rgb(255, 255, 255);
+        position: absolute;
+        z-index:10;
+    }
+    .smallb small{
+        margin-top:-60px;
+        margin-left:8px;
+        display: block;
+        color:rgb(255, 255, 255);
+        position: absolute;
+        z-index:20;
+    }
